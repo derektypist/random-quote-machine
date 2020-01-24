@@ -23,6 +23,23 @@
             width: 500px;
             margin: auto;
         }
+        
+        #text {
+            padding: 10px;
+        }
+        
+        #author {
+            text-align: right;
+            padding: 10px;
+        }
+        
+        #tweet-quote button {
+            text-align: center;
+        }
+        
+        #tweet-quote:hover button {
+            background-color: orange;
+        }
     </style>
 
     <!-- Load Scripts -->
@@ -36,7 +53,7 @@
         <article id="quote-box">
             <p></p>
             <p></p>
-            <button type="button"><i class="fab fa-twitter"></i></button>
+            <a href="https://www.twitter.com/intent/tweet" target="_blank" title="Tweet" id="tweet-quote"><button type="button"><i class="fab fa-twitter"></i></button></a>
         </article>
     </section>
     
