@@ -63,6 +63,12 @@ to auto.
 
 Random Quotes.
 
+## Technologies
+
+This project uses HTML5, CSS3 and Bootstrap 4.4.1.  Other technologies include Google Fonts and Font Awesome 5.8.1.
+
+
+
 
 ## Deployment
 
