@@ -5,6 +5,8 @@ https://codepen.io/freeCodeCamp/full/qRZeGZ
 
 ## UX
 
+Each time a user clicks on the New Quote Button, a different quote appears.
+
 Information Architecture - Quote is structured into text and author.
 
     Text                                                        Author
@@ -31,13 +33,6 @@ Information Architecture - Quote is structured into text and author.
     
 
 
-    
-
-
-
-
-
-
 ### User Stories
 
 User Stories taken from https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine
@@ -50,9 +45,9 @@ As a user, within #quote-box, I can see an element with id="author"
 
 As a user, within #quote-box, I can see a clickable a element with id="tweet-quote"
 
-As a user, on first load, my quote machine displays a random quote in the element with id=text.
+As a user, on first load, my quote machine displays a random quote in the element with id="text".
 
-As a user, on first load, my quote machine displays the random quote's author in the element with id=author.
+As a user, on first load, my quote machine displays the random quote's author in the element with id="author".
 
 As a user, when the #new-quote button is clicked, my quote machine should fetch a new quote and display it in the #text element.
 
@@ -63,6 +58,11 @@ in its href attribute to tweet the current quote.
 
 As a user, I expect the #quote-box wrapper to be horizontally centered.  Run tests with zoom level of 100% and page maximized.  Set height equal to width and the margin
 to auto.
+
+## Features
+
+Random Quotes.
+
 
 ## Deployment
 
