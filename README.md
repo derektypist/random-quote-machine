@@ -7,6 +7,37 @@ https://codepen.io/freeCodeCamp/full/qRZeGZ
 
 Information Architecture - Quote is structured into text and author.
 
+    Text                                                        Author
+    "Hope smiles from the threshold of the year to come,        Alfred Lord Tennyson
+    whispering.  It will be happier."
+    "O, wind, if winter comes, can spring be far behind?"       Percy Bysshe Shelley
+    "Spring is nature's way of saying, 'Let's Party!'""         Robin Williams
+    "Sweet April showers do spring May flowers."                Thomas Tusser
+    "As full of spirit as the month of May, and as              William Shakespeare
+    gorgeous as the sun in Midsummer."
+    "There are two seasons in Scotland: June and Winter."       Billy Connolly
+    "People don't notice whether it's winter or summer          Anton Chekhov
+    when they're happy."
+    "Summer Afternoon---summer afternoon; to me those have      Henry James
+    always been the two most beautiful words in the English
+    language."
+    "Autumn is a second spring when every leaf is a flower."    Albert Camus
+    "In seed time learn, in harvest teach, in winter enjoy."    William Blake
+    "Winter is the time for comfort, for good food and
+    warmth, for the touch of a friendly hand and for a talk     Edith Sitwell
+    beside the fire: it is time for home."
+    "Thank you for your kind words"                             Daphne Pink
+    "It looks as though you had a great time Derek"             Andrea Harrison
+    
+
+
+    
+
+
+
+
+
+
 ### User Stories
 
 User Stories taken from https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-random-quote-machine
