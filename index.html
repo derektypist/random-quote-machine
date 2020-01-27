@@ -54,6 +54,53 @@
     </style>
 
     <!-- Load Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function displayNewQuote() {
+            // Set Up Random Index
+
+            let randomIndex = Math.floor(Math.random() * 13);
+
+            // Set Up Constants noting use of Literals
+
+            const possibleText = ["\"Hope smiles from the threshold of the year to come whispering.  It will be happier.\"",
+                "\"O wind, if winter comes can spring be far behind?\"",
+                "\"Spring is nature's way of saying 'Let's Party'.\"",
+                "\"Sweet April showers do spring May Flowers.\"",
+                "\"As full of spirit as the month of May, and as gorgeous as the sun in Midsummer.\"",
+                "\"There are two seasons in Scotland: June and Winter.\"",
+                "\"People don't notice whether it's winter or summer when they're happy.\"",
+                "\"Summer Afternoon---summer afternoon; to me those have always been the first two beautiful words in the English Language.\"",
+                "\"Autumn is a second spring when every leaf is a flower.\"",
+                "\"In seed time learn, in harvest teach, in winter enjoy.\"",
+                "\"Winter is the time for comfort, for good food and warmth, for the touch of a friendly hand and a talk beside the fire: it is time for home.\"",
+                "\"Thank you for your kind words.\"",
+                "\"It looks as though you had a great time Derek.\""
+            ];
+            const text = possibleText[randomIndex];
+            const possibleAuthors = ["Alfred Lord Tennyson",
+                "Percy Bysshe Shelley",
+                "Robin Williams",
+                "Thomas Tusser",
+                "William Shakespeare",
+                "Billy Connolly",
+                "Anton Chekhov",
+                "Henry James",
+                "Albert Camus",
+                "William Blake",
+                "Edith Sitwell",
+                "Daphne Pink",
+                "Andrea Harrison"
+            ];
+            const author = possibleAuthors[randomIndex];
+
+            // Display text and author in the Browser Window
+            document.getElementById("text").innerHTML = text;
+            document.getElementById("author").innerHTML = author;
+        }
+
+        $(document).ready(displayNewQuote);
+    </script>
 
 </head>
 
@@ -67,7 +114,7 @@
         <article class="row">
             <!-- Set Up Article for Tweet Quote Button -->
             <article class="col-sm-2">
-                <a href="https://www.twitter.com/intent/tweet" target="_blank" title="Tweet" id="tweet-quote"><button type="button"><i class="fab fa-twitter"></i></button></a>
+                <a href="https://www.twitter.com/intent/tweet/#text" target="_blank" title="Tweet" id="tweet-quote"><button type="button"><i class="fab fa-twitter"></i></button></a>
             </article>
 
             <!-- Display Title (Random Quote Machine) -->
