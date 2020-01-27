@@ -49,11 +49,12 @@
 </head>
 
 <body>
-    <section id="machine">
+    <section id="quote-machine">
         <article id="quote-box">
-            <p id="text"></p>
-            <p id="author"></p>
+            <p id="text">{text}</p>
+            <p id="author">{author}</p>
             <a href="https://www.twitter.com/intent/tweet" target="_blank" title="Tweet" id="tweet-quote"><button type="button"><i class="fab fa-twitter"></i></button></a>
+            <button onclick="{this.quote}">New Quote</button>
         </article>
     </section>
     
@@ -63,8 +64,31 @@
             constructor(props) {
                 super(props)
                 this.state = {
-                    text: [],
-                    author: []
+                    randomIndex: '',
+                    text: '',
+                    author: ''
+                }
+                this.quote = this.quote.bind(this);
+                this.handleChange = this.handleChange.bind(this);
+                
+                
+                // Apply quote
+                quote() {
+                    this.setState = {
+                        randomIndex: Math(floor(Math.random() * 13)),
+                        text: '',
+                        author: ''
+                    }
+                    
+                }
+                
+                // Apply render
+                render() {
+                    // Set Up Constants
+                    const possibleText = ["\"Hope Hope smiles from the threshold of the year to come whispering.  It will be happier\""];
+                    const text = possibleText[this.state.RandomIndex];
+                    const possibleAuthors = ["Alfred Lord Tennyson", "Percy Bysshe Shelley", "Robin Williams"]
+                    const author = possibleAuthors[this.state.RandomIndex];
                 }
             }
         }
