@@ -19,7 +19,7 @@
             display: block;
             position: relative;
             top: 200px;
-            height: 225px;
+            height: 300px;
             width: 500px;
             margin: auto;
 
@@ -93,10 +93,12 @@
                 "Andrea Harrison"
             ];
             const author = possibleAuthors[randomIndex];
+            
 
             // Display text and author in the Browser Window
             document.getElementById("text").innerHTML = text;
             document.getElementById("author").innerHTML = author;
+            
         }
 
         $(document).ready(displayNewQuote);
@@ -109,12 +111,12 @@
     <article id="quote-box">
         <h4 id="text"></h4>
         <p id="author"></p>
-
+        <p></p>
         <!-- Set Up Row -->
         <article class="row">
             <!-- Set Up Article for Tweet Quote Button -->
             <article class="col-sm-2">
-                <a href="https://www.twitter.com/intent/tweet/#text" target="_blank" title="Tweet" id="tweet-quote"><button type="button"><i class="fab fa-twitter"></i></button></a>
+                <a href="https://www.twitter.com/intent/tweet/" target="_blank" title="Tweet" id="tweet-quote"><button type="button"><i class="fab fa-twitter"></i></button></a>
             </article>
 
             <!-- Display Title (Random Quote Machine) -->
