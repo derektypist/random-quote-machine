@@ -19,9 +19,10 @@
             display: block;
             position: relative;
             top: 200px;
-            height: 250px;
+            height: 225px;
             width: 500px;
             margin: auto;
+
         }
 
         #text {
@@ -33,8 +34,14 @@
             padding: 10px;
         }
 
+        #tweet-quote {
+            padding: 10px;
+        }
+
         #tweet-quote button {
             text-align: center;
+            padding: 10px;
+
         }
 
         #tweet-quote:hover button {
@@ -55,8 +62,28 @@
     <article id="quote-box">
         <h4 id="text"></h4>
         <p id="author"></p>
-        <a href="https://www.twitter.com/intent/tweet" target="_blank" title="Tweet" id="tweet-quote"><button type="button"><i class="fab fa-twitter"></i></button></a>
-        <button onclick="displayNewQuote()" title="New Quote">New Quote</button>
+
+        <!-- Set Up Row -->
+        <article class="row">
+            <!-- Set Up Article for Tweet Quote Button -->
+            <article class="col-sm-2">
+                <a href="https://www.twitter.com/intent/tweet" target="_blank" title="Tweet" id="tweet-quote"><button type="button"><i class="fab fa-twitter"></i></button></a>
+            </article>
+
+            <!-- Display Title (Random Quote Machine) -->
+            <article class="col-sm-6">
+                <p>Random Quote Machine</p>
+            </article>
+
+            <!-- Set Up Article for New Quote Button -->
+            <article class="col-sm-4">
+                <button onclick="displayNewQuote()" title="New Quote" id="new-quote">New Quote</button>
+            </article>
+
+        </article>
+
+
+
     </article>
 
 
@@ -87,20 +114,21 @@
             ];
             const text = possibleText[randomIndex];
             const possibleAuthors = ["Alfred Lord Tennyson",
-                                    "Percy Bysshe Shelley",
-                                    "Robin Williams",
-                                    "Thomas Tusser",
-                                    "William Shakespeare",
-                                    "Billy Connolly",
-                                    "Anton Chekhov",
-                                    "Henry James",
-                                    "Albert Camus",
-                                    "William Blake",
-                                    "Edith Sitwell",
-                                    "Daphne Pink",
-                                    "Andrea Harrison"];
+                "Percy Bysshe Shelley",
+                "Robin Williams",
+                "Thomas Tusser",
+                "William Shakespeare",
+                "Billy Connolly",
+                "Anton Chekhov",
+                "Henry James",
+                "Albert Camus",
+                "William Blake",
+                "Edith Sitwell",
+                "Daphne Pink",
+                "Andrea Harrison"
+            ];
             const author = possibleAuthors[randomIndex];
-            
+
             // Display text and author in the Browser Window
             document.getElementById("text").innerHTML = text;
             document.getElementById("author").innerHTML = author;
