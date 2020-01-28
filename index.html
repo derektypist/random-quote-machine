@@ -97,10 +97,9 @@
             ];
             const author = possibleAuthors[randomIndex];
             
-
-            // Display text and author in the Browser Window
-            document.getElementById("text").innerHTML = text;
-            document.getElementById("author").innerHTML = author;
+            // Display Text (Quote) and Authors
+            <h4>${text}</h4>;
+            <p>${author}</p>;
             
         }
 
@@ -115,9 +114,11 @@
 <body>
     <!-- Set Up Quote Box -->
     <article id="quote-box">
-        <h4 id="text"></h4>
-        <p id="author"></p>
-        <p></p>
+        <!-- Set Up Article for Text -->
+        <article id="text">
+        </article>
+        <!-- Set Up Article for Author -->
+        <article id="author"></article>
         <!-- Set Up Row -->
         <article class="row">
             <!-- Set Up Article for Tweet Quote Button -->
