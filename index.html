@@ -97,10 +97,21 @@
             ];
             const author = possibleAuthors[randomIndex];
             
-            // Display Text (Quote) and Authors
-            <h4>${text}</h4>;
-            <p>${author}</p>;
             
+            // Display Text (Quote) and Authors
+            `<h4>${text}</h4>`;
+            `<p>${author}</p>`;
+            
+            
+            // Set Up Tweet Quote
+            let tweetQuote = text + author + "#quotes";
+            $("#tweet-quote").html(
+                `<a href="https://twitter.com/intent/tweet/${tweetQuote}" target="_blank" title="Tweet">
+                    <button type="button">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                </a>`     
+                );
         }
 
       
@@ -123,8 +134,7 @@
         <!-- Set Up Row -->
         <article class="row">
             <!-- Set Up Article for Tweet Quote Button -->
-            <article class="col-sm-2">
-                <a href="https://twitter.com/intent/tweet/" target="_blank" title="Tweet" id="tweet-quote"><button type="button"><i class="fab fa-twitter"></i></button></a>
+            <article class="col-sm-2" id="tweet-quote">
             </article>
 
             <!-- Display Title (Random Quote Machine) -->
