@@ -9,27 +9,27 @@ Each time a user clicks on the New Quote Button, a different quote appears.
 
 Information Architecture - Quote is structured into text and author.
 
-    Text                                                        Author
-    "Hope smiles from the threshold of the year to come,        Alfred Lord Tennyson
+    Text                                                        Author                  Random Index
+    "Hope smiles from the threshold of the year to come,        Alfred Lord Tennyson        0
     whispering.  It will be happier."
-    "O, wind, if winter comes, can spring be far behind?"       Percy Bysshe Shelley
-    "Spring is nature's way of saying, 'Let's Party!'""         Robin Williams
-    "Sweet April showers do spring May flowers."                Thomas Tusser
-    "As full of spirit as the month of May, and as              William Shakespeare
+    "O, wind, if winter comes, can spring be far behind?"       Percy Bysshe Shelley        1
+    "Spring is nature's way of saying, 'Let's Party!'""         Robin Williams              2
+    "Sweet April showers do spring May flowers."                Thomas Tusser               3
+    "As full of spirit as the month of May, and as              William Shakespeare         4
     gorgeous as the sun in Midsummer."
-    "There are two seasons in Scotland: June and Winter."       Billy Connolly
-    "People don't notice whether it's winter or summer          Anton Chekhov
+    "There are two seasons in Scotland: June and Winter."       Billy Connolly              5
+    "People don't notice whether it's winter or summer          Anton Chekhov               6
     when they're happy."
-    "Summer Afternoon---summer afternoon; to me those have      Henry James
+    "Summer Afternoon---summer afternoon; to me those have      Henry James                 7
     always been the two most beautiful words in the English
     language."
-    "Autumn is a second spring when every leaf is a flower."    Albert Camus
-    "In seed time learn, in harvest teach, in winter enjoy."    William Blake
+    "Autumn is a second spring when every leaf is a flower."    Albert Camus                8
+    "In seed time learn, in harvest teach, in winter enjoy."    William Blake               9
     "Winter is the time for comfort, for good food and
-    warmth, for the touch of a friendly hand and for a talk     Edith Sitwell
+    warmth, for the touch of a friendly hand and for a talk     Edith Sitwell               10
     beside the fire: it is time for home."
-    "Thank you for your kind words"                             Daphne Pink
-    "It looks as though you had a great time Derek"             Andrea Harrison
+    "Thank you for your kind words."                            Daphne Pink                 11
+    "It looks as though you had a great time Derek."            Andrea Harrison             12
     
 
 
