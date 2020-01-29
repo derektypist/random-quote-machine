@@ -62,21 +62,21 @@
 
             let randomIndex = Math.floor(Math.random() * 13);
 
-            // Set Up Constants noting use of &quot
+            // Set Up Constants
 
-            const possibleText = ["&quotHope smiles from the threshold of the year to come whispering.  It will be happier.&quot",
-                "&quotO wind, if winter comes can spring be far behind?&quot",
-                "&quotSpring is nature's way of saying 'Let's Party'.&quot",
-                "&quotSweet April showers do spring May Flowers.&quot",
-                "&quotAs full of spirit as the month of May, and as gorgeous as the sun in Midsummer.&quot",
-                "&quotThere are two seasons in Scotland: June and Winter.&quot",
-                "&quotPeople don't notice whether it's winter or summer when they're happy.&quot",
-                "&quotSummer Afternoon---summer afternoon; to me those have always been the first two beautiful words in the English Language.&quot",
-                "&quotAutumn is a second spring when every leaf is a flower.&quot",
-                "&quotIn seed time learn, in harvest teach, in winter enjoy.&quot",
-                "&quotWinter is the time for comfort, for good food and warmth, for the touch of a friendly hand and a talk beside the fire: it is time for home.&quot",
-                "&quotThank you for your kind words.&quot",
-                "&quotIt looks as though you had a great time Derek.&quot"
+            const possibleText = ["Hope smiles from the threshold of the year to come whispering.  It will be happier.",
+                "O wind, if winter comes can spring be far behind?",
+                "Spring is nature's way of saying 'Let's Party'",
+                "Sweet April showers do spring May Flowers.",
+                "As full of spirit as the month of May, and as gorgeous as the sun in Midsummer.",
+                "There are two seasons in Scotland: June and Winter.",
+                "People don't notice whether it's winter or summer when they're happy.",
+                "Summer Afternoon---summer afternoon.  To me those have always been the first two beautiful words in the English Language.",
+                "Autumn is a second spring when every leaf is a flower.",
+                "In seed time learn, in harvest teach, in winter enjoy.",
+                "Winter is the time for comfort, for good food and warmth, for the touch of a friendly hand and a talk beside the fire: it is time for home.",
+                "Thank you for your kind words.",
+                "It looks as though you had a great time Derek."
             ];
             const text = possibleText[randomIndex];
             const possibleAuthors = ["Alfred Lord Tennyson",
@@ -97,14 +97,14 @@
 
 
             // Display Text (Quote) and Author
-            $("#text").html(`<h4>${text}</h4>`);
-            $("#author").html(`<p>${author}</p>`);
+            $("#text").html(`<h4>&quot${text}&quot</h4>`);
+            $("#author").html(`<p>- ${author}</p>`);
 
 
             // Set Up Tweet Quote
-            let tweetQuote = text + " " + author + "#quotes";
+            let tweetQuote = text + " " + author;
             $("#tweet-quote").html(
-                `<a href="https://twitter.com/intent/tweet/${tweetQuote}" target="_blank" title="Tweet">
+                `<a href="https://twitter.com/intent/tweet?hashtags=quotes${tweetQuote}" target="_blank" title="Tweet">
                     <button type="button">
                         <i class="fab fa-twitter"></i>
                     </button>
