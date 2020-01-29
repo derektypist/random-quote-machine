@@ -19,7 +19,7 @@
             display: block;
             position: relative;
             top: 200px;
-            height: 230px;
+            height: 250px;
             width: 500px;
             margin: auto;
 
@@ -33,9 +33,8 @@
             text-align: right;
             padding: 10px;
         }
-        
 
-        #tweet-quote {
+        #my-buttons {
             padding: 10px;
         }
 
@@ -57,28 +56,27 @@
     <!-- Load Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-    
         // Define Function for New Quote
         function displayNewQuote() {
             // Set Up Random Index
 
             let randomIndex = Math.floor(Math.random() * 13);
 
-            // Set Up Constants noting use of Escape Characters
+            // Set Up Constants noting use of &quot
 
-            const possibleText = ["\"Hope smiles from the threshold of the year to come whispering.  It will be happier.\"",
-                "\"O wind, if winter comes can spring be far behind?\"",
-                "\"Spring is nature's way of saying 'Let's Party'.\"",
-                "\"Sweet April showers do spring May Flowers.\"",
-                "\"As full of spirit as the month of May, and as gorgeous as the sun in Midsummer.\"",
-                "\"There are two seasons in Scotland: June and Winter.\"",
-                "\"People don't notice whether it's winter or summer when they're happy.\"",
-                "\"Summer Afternoon---summer afternoon; to me those have always been the first two beautiful words in the English Language.\"",
-                "\"Autumn is a second spring when every leaf is a flower.\"",
-                "\"In seed time learn, in harvest teach, in winter enjoy.\"",
-                "\"Winter is the time for comfort, for good food and warmth, for the touch of a friendly hand and a talk beside the fire: it is time for home.\"",
-                "\"Thank you for your kind words.\"",
-                "\"It looks as though you had a great time Derek.\""
+            const possibleText = ["&quotHope smiles from the threshold of the year to come whispering.  It will be happier.&quot",
+                "&quotO wind, if winter comes can spring be far behind?&quot",
+                "&quotSpring is nature's way of saying 'Let's Party'.&quot",
+                "&quotSweet April showers do spring May Flowers.&quot",
+                "&quotAs full of spirit as the month of May, and as gorgeous as the sun in Midsummer.&quot",
+                "&quotThere are two seasons in Scotland: June and Winter.&quot",
+                "&quotPeople don't notice whether it's winter or summer when they're happy.&quot",
+                "&quotSummer Afternoon---summer afternoon; to me those have always been the first two beautiful words in the English Language.&quot",
+                "&quotAutumn is a second spring when every leaf is a flower.&quot",
+                "&quotIn seed time learn, in harvest teach, in winter enjoy.&quot",
+                "&quotWinter is the time for comfort, for good food and warmth, for the touch of a friendly hand and a talk beside the fire: it is time for home.&quot",
+                "&quotThank you for your kind words.&quot",
+                "&quotIt looks as though you had a great time Derek.&quot"
             ];
             const text = possibleText[randomIndex];
             const possibleAuthors = ["Alfred Lord Tennyson",
@@ -96,25 +94,25 @@
                 "Andrea Harrison"
             ];
             const author = possibleAuthors[randomIndex];
-            
-            
-            // Display Text (Quote) and Authors
-            `<h4>${text}</h4>`;
-            `<p>${author}</p>`;
-            
-            
+
+
+            // Display Text (Quote) and Author
+            $("#text").html(`<h4>${text}</h4>`);
+            $("#author").html(`<p>${author}</p>`);
+
+
             // Set Up Tweet Quote
-            let tweetQuote = text + author + "#quotes";
+            let tweetQuote = text + " " + author + "#quotes";
             $("#tweet-quote").html(
                 `<a href="https://twitter.com/intent/tweet/${tweetQuote}" target="_blank" title="Tweet">
                     <button type="button">
                         <i class="fab fa-twitter"></i>
                     </button>
-                </a>`     
-                );
+                </a>`
+            );
         }
 
-      
+
 
 
         $(document).ready(displayNewQuote);
@@ -123,27 +121,24 @@
 </head>
 
 <body>
-    <!-- Set Up Quote Box -->
+    <!-- Set Up Quote Box with Text and Author -->
     <article id="quote-box">
         <article id="text">
-        <!-- Set Up Article for Text -->
         </article>
         <article id="author">
-        <!-- Set Up Article for Author -->
         </article>
         <!-- Set Up Row -->
-        <article class="row">
-            <!-- Set Up Article for Tweet Quote Button -->
+        <article class="row" id="my-buttons">
             <article class="col-sm-2" id="tweet-quote">
             </article>
 
-            <!-- Display Title (Random Quote Machine) -->
             <article class="col-sm-6">
+                <!-- Display Title (Random Quote Machine) -->
                 <p>Random Quote Machine</p>
             </article>
 
-            <!-- Set Up Article for New Quote Button -->
             <article class="col-sm-4">
+                <!-- Set Up New Quote Button -->
                 <button onclick="displayNewQuote()" title="New Quote" id="new-quote">New Quote</button>
             </article>
 
@@ -154,7 +149,7 @@
     </article>
 
 
-    
+
 </body>
 
 </html>
